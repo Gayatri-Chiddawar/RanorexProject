@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8d87072a-1e18-4878-8a33-3ef6cd94c545"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="SerachProductOnAmazon">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="ba4e4068-0f86-4aff-829e-f483bfeee3eb">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="031f3934-ae17-424e-8bd7-87a196792419"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='chrome']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="5f611665-1fda-41e3-acbb-3e489cee426c"
+	name="SerachProductOnAmazonRepository"
+	relativepath="SerachProductOnAmazonRepository.rxrep">
+		<codegen
+		classname="SerachProductOnAmazonRepository"
+		namespace="SerachProductOnAmazon">
+		</codegen>
+		<rootfolder
+		id="0a9a4765-5722-4981-926c-918e49807ce5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

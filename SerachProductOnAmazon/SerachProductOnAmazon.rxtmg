@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="SerachProductOnAmazon"
+      id="761f812e-fac6-4f97-9fcf-f2d07c1c358d"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="SerachProductOnAmazon"
+      id="761f812e-fac6-4f97-9fcf-f2d07c1c358d"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

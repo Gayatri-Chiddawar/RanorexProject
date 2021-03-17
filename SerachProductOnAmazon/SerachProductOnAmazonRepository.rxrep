@@ -1,0 +1,175 @@
+﻿<repository
+id="5f611665-1fda-41e3-acbb-3e489cee426c"
+name="SerachProductOnAmazonRepository">
+	<codegen
+	classname="SerachProductOnAmazonRepository"
+	namespace="SerachProductOnAmazon">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="0a9a4765-5722-4981-926c-918e49807ce5"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="031f3934-ae17-424e-8bd7-87a196792419"
+		isrooted="True"
+		name="ApplicationUnderTest"
+		refimgid="b6845a55-0071-440d-8543-f42e53e9fb07"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="b14dc429-f3cb-47c6-914b-3371017b41fe"
+			name="DownloadTheAmazonApp"
+			refimgid="181b012d-f321-44d4-bf8c-2853dd862074"
+			refpath="/dom[@domain='www.amazon.in']//div[#'gw-card-layout']/div[4]/div[1]/div/div[3]/a[@innertext='Download the Amazon App']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.amazon.in']//div[#'gw-card-layout']/div[4]//a[@innertext='Download the Amazon App']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="a87474c3-fad6-4c26-b558-8c85148b449c"
+			name="ASectionASpacingNoneGwCardLayout"
+			refimgid="f0f8257e-11a4-4ee8-9e0a-e822fc9e4823"
+			refpath="/dom[@domain='www.amazon.in']//div[#'gw-card-layout']/div[4]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.amazon.in']//div[#'gw-card-layout']/div[4]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="dddc04e6-3371-46be-b6d4-370c00532da9"
+			name="Twotabsearchtextbox"
+			refimgid="db1a4d88-f5b8-4995-b9c0-d7b5695d33db"
+			refpath="/dom[@domain='www.amazon.in']//input[#'twotabsearchtextbox']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.amazon.in']//input[#'twotabsearchtextbox']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="2dbb29f0-08f4-425a-ba6b-01758a36b8bf"
+			name="NavSearchSubmitButton"
+			refimgid="76449bec-3101-4627-b696-b875a74c3d34"
+			refpath="/dom[@domain='www.amazon.in']//input[#'nav-search-submit-button']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.amazon.in']//input[#'nav-search-submit-button']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="1460d56d-f271-44f0-9b80-88791c907f17"
+			name="AScrollerAScrollerVerticalEwcScrol"
+			refimgid="0ed8b2dd-e8a5-4e6e-9c25-c3af3dd25a33"
+			refpath="/dom[@domain='www.amazon.in' and @caption>'New Apple iPhone 12 Mini (128GB)']//div[#'ewc-compact-body']/div"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.amazon.in']//div[#'ewc-compact-body']/div
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="spantag"
+			id="c7178d3e-31fa-40ef-a0ad-333198d88b3e"
+			name="CenterCol"
+			refimgid="23620d53-a826-4d15-a28d-cb96a74f9a4c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.amazon.in']//div[#'search']/div[1]/div[2]/div/span[3]/div[2]/div[4]/?/?/span/div/div/div[2]/div[2]/div/div[1]//a[@href&gt;'https://www.amazon.in/New']/span[@innertext&gt;'New Apple iPhone 12 (128GB)' and @title=null()]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="bb26a777-1cf4-467b-926d-9c2b3250be33"
+			name="AddToCartButton"
+			refimgid="fd887290-230c-499f-aa94-3d323c0c4d1e"
+			refpath="/dom[@domain='www.amazon.in' and @caption>'New Apple iPhone 12 Mini (128GB)']//input[#'add-to-cart-button']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.amazon.in']//input[#'add-to-cart-button']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="facd8b44-6e4f-42ff-b1bf-0900ce64300e"
+			name="NewAppleIPhone12Mini64GBBlue"
+			refimgid="48921563-3b5f-4fa1-aeba-69c8c4d1796d"
+			refpath="/dom[@domain='www.amazon.in']//div[#'search']/div[1]/div[2]/div/span[3]/div[2]/div[3]/div/span/div/div/div[2]/div[2]/div/div[1]/div/div/div[1]/h2/a/span[@innertext>'New Apple iPhone 12 Mini (64GB)']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.amazon.in']//div[#'search']/div[1]/div[2]/div/span[3]/div[2]/div[3]/?/?/span/div/div/div[2]/div[2]/div/div[1]//a[@href&gt;'https://www.amazon.in/New']/span[@innertext&gt;'New Apple iPhone 12 Mini (64GB)']
+			</item>
+			<basepath>
+				/dom[@domain='www.amazon.in']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="host,nativewindow"
+		capname="host"
+		id="21478a05-c1bf-460f-a183-b5dd69db9b61"
+		isrooted="True"
+		name="P3CLAPF1W4AFH"
+		refimgid="48b714fe-868d-421d-bce6-57724241158b"
+		refpath=""
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="host,nativewindow"
+			capname="host"
+			id="ff1dd1e8-2e83-4210-98b4-ecbfe1e03759"
+			name="P3CLAPF1W4AFH"
+			refimgid="420cfc12-f3f4-4660-ba5a-697663b0b785"
+			refpath=""
+			robustPath=""
+			searchtimeout="30000ms">
+			</item>
+			<basepath>
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACtUlEQVQ4T62S6zOUYRiH9w/qYzM1o5moMUyNShmHpISUNhIrHRxW
+DjmXpcah2Ky1TcsSa5ZQ0u62csxxMI4p6URGWFlXz6rGNPu1e+b98sx7Xc/v996v5L/N4OgcPYPT
+WPomaH8zSotpGENbP3UtvVQbutDUWVDVmCjVtlOsaeMPtjNd/VNcfwwyNVwuh4ulEFoMQfchQGHj
+5B0rPlkreN1eRKFsdBQYO8eIroAHz6GgCbLqQa6DqxoIV0JIoV20iU/mCndKDY6CFuMQ4WWgEHCG
+gBOrIKYSpOIsWMCn8n7inbHM0VvzZBfXOwr0rX2cL4H0OkjQQrSoIhU1zooK/nc38MpY4oj8Pe6x
+o6QXPnUUVBk6t1+OewJRKgh78Bu2d7f39kh8h/vVEVwiOki9p3MUqGvN2x2viA94QcCBBeCXu86J
+tG94xM/iFjOES7iFfeeaSVJoHQVlYj2+OWuEihpn8rfwzV7leOoXDsdN4yobwFlqxinkGXtP15KQ
++9hRUFT5HK/07wTk2/DJ/oFn8mcO3ZzENfqtgI04BTeyJ0DHbj8NN7IqHAUKZRNzn6xMza8zPrfG
+yMwqA5M/6B1bobXzI7UvJijWWgjtCkWWpvxXkJLz8KBG/3pTqXtJYWWz2HM9afe0xOeokKWUII0v
+IEiWjd+lFI4Fx+HmL9u8lFAU+QeXSDQNFv7Opm2LNauNpZWfzH+1MikS2dN0iySmwWVae5aoaZvl
+gHfkTgp1nXkbjjXFsm7d4oNhFwuLG8wsWGl8NUjFU6NIped6porYDBUlugH2n4jYEZTXGrGJm6sG
+9AxPLDA7VE579zRNpnFqWkdQN/RTUt2NQt1BziMzmWVG9nlKdwRFmma5eMhT6sVfVo38biXX0suI
+TCok7EYegVGZ+EqTt/u7+8fg7BVhF8glEonkF6m1M1/+IilrAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{E919774F-218E-439D-97B6-570CF9B86845}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SerachProductOnAmazon</RootNamespace>
+    <AssemblyName>SerachProductOnAmazon</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>59fbf80b-0233-4b66-9fb5-adb23f4424da</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>6e528898-ba7a-48b1-b39b-84d340d12c13</id>
+    </Compile>
+    <Compile Include="CloseBrowser.cs">
+      <BoundTo>05037717-593b-42a7-91d3-be461f4af481</BoundTo>
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>de64a925-2199-425d-ba16-a9150aae7930</id>
+    </Compile>
+    <Compile Include="CloseBrowser.UserCode.cs">
+      <BoundTo>05037717-593b-42a7-91d3-be461f4af481</BoundTo>
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a78e6420-e772-4968-b778-f9afc2002c25</id>
+    </Compile>
+    <Compile Include="OpenBrowser.cs">
+      <BoundTo>7c6afff9-6d67-4a9a-85f8-62533c37c3bc</BoundTo>
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0d2a6f0a-d67b-4847-8190-9f1e278fc442</id>
+    </Compile>
+    <Compile Include="OpenBrowser.UserCode.cs">
+      <BoundTo>7c6afff9-6d67-4a9a-85f8-62533c37c3bc</BoundTo>
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>be395540-f776-4660-b2f7-9849fc1e2070</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>d76003e8-63c8-458a-a800-55763dc27ad6</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>d3615266-99b9-4afc-b969-10499e74af59</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>79fad0e4-b737-4ccc-9fd8-022d661e35d1</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>d3615266-99b9-4afc-b969-10499e74af59</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a1a930a0-3060-4d9e-b4e8-f8677bce398a</id>
+    </Compile>
+    <Compile Include="SerachProductOnAmazonRepository.cs">
+      <BoundTo>59fbf80b-0233-4b66-9fb5-adb23f4424da</BoundTo>
+      <DependentUpon>SerachProductOnAmazonRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>432eff31-a1b3-4710-864f-59ddc7b87fb2</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NewCustomTemplate1\RanorexReport.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>74c50bae-ec21-45b1-b014-3a41de8effb9</id>
+    </Content>
+    <Content Include="NewCustomTemplate1\RanorexReport.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>4ab346d2-fe88-4a21-b4e5-f5b4e8cc3af8</id>
+    </Content>
+    <Content Include="NewCustomTemplate1\RanorexReport.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>998e3cc3-67fe-479d-85e7-b4b727650b30</id>
+    </Content>
+    <Content Include="NewCustomTemplate1\View.rxlog">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>27fb296c-0460-4639-93db-b710cc5e1b72</id>
+    </Content>
+    <Content Include="NewCustomTemplate1\View.rxlog.data">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>490978d0-7469-45ed-80a2-a7d38e597d0e</id>
+    </Content>
+    <Content Include="TestSuite1.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>4b68c276-8cd9-4240-9029-b97600f553f3</id>
+    </Content>
+    <None Include="app.config">
+      <id>9a96533b-7a07-4db4-9b54-558c115b4b71</id>
+    </None>
+    <None Include="CloseBrowser.rxrec">
+      <BoundTo>59fbf80b-0233-4b66-9fb5-adb23f4424da</BoundTo>
+      <id>05037717-593b-42a7-91d3-be461f4af481</id>
+      <recordtableid>8d87072a-1e18-4878-8a33-3ef6cd94c545</recordtableid>
+    </None>
+    <None Include="OpenBrowser.rxrec">
+      <BoundTo>59fbf80b-0233-4b66-9fb5-adb23f4424da</BoundTo>
+      <id>7c6afff9-6d67-4a9a-85f8-62533c37c3bc</id>
+      <recordtableid>3b390cad-dd2c-4f2b-b593-cd048345f564</recordtableid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>59fbf80b-0233-4b66-9fb5-adb23f4424da</BoundTo>
+      <id>d3615266-99b9-4afc-b969-10499e74af59</id>
+      <recordtableid>ddbfefc3-6d81-4e1f-8672-264ec358a603</recordtableid>
+    </None>
+    <Content Include="SerachProductOnAmazon.rxsqc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>f0dad4fc-5ec8-40f0-817e-f3bf130c61d2</id>
+    </Content>
+    <None Include="SerachProductOnAmazonRepository.rximg">
+      <BoundTo>59fbf80b-0233-4b66-9fb5-adb23f4424da</BoundTo>
+      <DependentUpon>SerachProductOnAmazonRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>ff297085-23e3-4db7-a2ce-461f911e63af</id>
+    </None>
+    <None Include="SerachProductOnAmazonRepository.rxrep">
+      <id>59fbf80b-0233-4b66-9fb5-adb23f4424da</id>
+      <repoid>5f611665-1fda-41e3-acbb-3e489cee426c</repoid>
+      <reporootid>0a9a4765-5722-4981-926c-918e49807ce5</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SerachProductOnAmazon.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>2a442303-3d24-4f94-b4f8-6ac94bc5217b</id>
+    </Content>
+    <Content Include="SerachProductOnAmazon.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>2a98bdb9-4624-426a-887b-5688144b3672</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewCustomTemplate1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>6fb18d3c-2a67-43fc-96fc-4ad782b3b6a1</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
